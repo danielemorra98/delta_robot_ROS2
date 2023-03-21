@@ -25,7 +25,10 @@ source install/setup.bash
 ros2 run delta_robot deltaKinematics 
 ```
 
-In order to compute the 
+In order to send the Cartesian position of the end-effector:
+```
+ros2 topic pub /delta_robot/desired_position geometry_msgs/msg/Vector3 "{x: 0.0, y: 0.0, z: -0.40}"
+```
 
 # Installation
 Clone the repository inside your ROS2 workspace and build the package:
