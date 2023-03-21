@@ -11,10 +11,10 @@ from sensor_msgs.msg import JointState
 
 class DeltaRobot:
     def __init__(self):
-        self.e  =  5.0 # End-effector radius
-        self.f  =  50.0 # Base platform radius
-        self.re = 100.0 # Distrance from elbow to the wrist
-        self.rf =  50.0 # Distance from motor shaft to elbow
+        self.e  =  0.05 # End-effector radius
+        self.f  =  0.5  # Base platform radius
+        self.re =  1.0  # Distrance from elbow to the wrist
+        self.rf =  0.5  # Distance from motor shaft to elbow
 
         self.base_origin_x = 0.0
         self.base_origin_y = 0.0
